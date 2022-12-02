@@ -69,7 +69,7 @@ input {
 }
 
 button {
-border: 20px solid #004E64;  
+border: 15px solid #004E64;  
 background-color: #004E64;
 border-radius: 10px;
 color: white;
@@ -82,16 +82,22 @@ color: white;
 	text-transform: uppercase; 
 	display:block;
 	margin: 0 auto;
+	cursor: pointer;
 }
 .button {
 	position: absolute;
 	width: 100%;
 	left: 0;
-  	top: 650px; 
+  	top: 650px;
+}
+
+button:hover {
+	background-color: #00A5CF;
+	border:15px solid #00A5CF
 }
 
 h1{
-	padding-top: 40px;
+padding-top: 40px;
 text-align: center;
 font-family: 'Inter';
 font-style: normal;

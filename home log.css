@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;800&display=swap');
+
+button {
+    border: 10px solid #F8861B;  
+    background-color: #F8861B;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase; 
+    display:block;
+    margin: 0 auto;
+    cursor: pointer;
+    }
+
+    .button {
+        position: absolute;
+        width: 100%;
+        left: 400px;
+        top: 230px; 
+        z-index: 2;
+    }
+
+    button:hover {
+        background-color: #F0AB6B;
+        border:10px solid #F0AB6B;
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+  }
+  
+  /* HEADER */
+  #main_header {
+      height: 100px;
+      width: 100%;
+      background: rgb(218,237,189);
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      position: fixed;
+      z-index: 1;
+  }
+  #logo {
+      padding-top: 18px;
+      padding-left:10%;
+  } 
+  
+  
+  #nav_header {
+    text-align: center;
+      width: 100%;
+      top:0;
+      position: absolute;
+      padding-top: 38px;
+  }
+  
+  #nav_inicio {
+      padding-right: 5%;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #25A18E;
+  }
+  #nav_inicio:hover {
+      color: #F8861B;
+  }
+  
+  #nav_o_projeto {
+      padding-right: 5%;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #25A18E;
+  }
+  #nav_o_projeto:hover {
+      color: #F8861B;
+  }
+  
+  #nav_ajuda {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #25A18E;
+  }
+  #nav_ajuda:hover {
+      color: #F8861B;
+  }
+  
+  #minha_conta {
+      position: absolute;
+      width: 30%;
+      left: 72%;
+      top: 28px;
+  }
+  
+  #icone_minha_conta {
+      position: absolute;
+      background: url("../imagens/login.png");
+      width: 35px;
+      right: 85.78%;
+      top: 2.22%;
+      bottom: 8.89%;
+  }
+  
+  
+  #nav_minha_conta {
+      position: absolute;
+      left: 20%;
+      right: 11.01%;
+      top: 0%;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #004E64;
+  }
+  
+  
+  #nav_entrar_ou_registrar {
+      position: absolute;
+      left: 20%;
+      right: 0%;
+      bottom: 0%;
+        top: 25px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #004E64;
+  }
+  
+  
+  
+  /* FIM DO HEADER */
+  
+  /* Inicio slider */
+  
+  .slider{
+    margin: 0 auto;
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+    
+    
+  }
+  
+  .slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+  }
+  
+  .slides input {
+    display: none;
+  }
+  
+  .slide{
+    width: 25%;
+    position: relative;
+  }
+  
+  .slide img{
+    width: 1200px;
+  }
+  
+  .nav-manual{
+    position: absolute;
+    width: 1200px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    border: 2px solid  #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .manual-btn:hover{
+    background-color: orange;
+  }
+  
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first {
+    margin-left: -25%;
+  }
+  
+  #radio3:checked ~ .first {
+    margin-left: -50%;
+  }
+  
+  #radio4:checked ~ .first {
+    margin-left: -75%;
+  }
+  
+  #radio5:checked ~ .first {
+    margin-left: -100%;
+  }
+  
+  .nav-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .nav-auto{
+    position: absolute;
+    width: 1200px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-auto div{
+    margin-right: 10px;
+    margin-left: 10px;
+  
+  }
+  
+  #radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: orange;
+  }
+  
+  #radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: orange;
+  }
+  
+  #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: orange;
+  }
+  
+  #radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: orange;
+  }
+  
+  #radio5:checked ~ .nav-auto .auto-btn5{
+    background-color: orange;
+  }
+  
+  
+  /* Final slider */
+  
+  
+  /* GRID */
+  .container-grid {
+      width: 80%;
+      height: 60%;
+      display: grid;
+      grid-template-columns: repeat(3, 350px);
+      grid-template-rows: repeat(3, minmax(100px, 100%));
+      font-family: 'Inter', monospace;
+      font-size: larger;
+      background-color: #ffffff;
+      justify-content: center;
+      padding: 40px;
+      margin: auto ;
+      gap: 3%;
+    }
+    .griditem p {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .griditem img {
+    object-fit: fill;
+    }
+  
+    .gridimg {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .griditem h3 {
+      padding: 2px;
+    }
+   
+    .griditem1{
+      grid-column: span 2;
+    }
+  
+    .griditem2 {
+      grid-column: span 1;
+      justify-content: left;
+    }
+  
+    .griditem3 {
+      grid-column: span 1;
+    }
+  
+    .griditem4 {
+      grid-column: span 2;
+    }
+  
+    .griditem5 {
+      grid-column: span 2;
+    }
+  
+    .griditem6 {
+      grid-column: span 1;
+    }
+  
+    .griditem5 h3 {
+  
+      border-right: 2px solid var(--azulescuro);
+    }
+  /*FIM DA GRID*/
+  
+  /* INÍCIO FOOTER */
+  footer p {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+  }
+  
+  /* TODO CONTEÚDO (MENOS BARRA INFERIOR) */
+  .conteudo-footer {
+      display: flex;
+      height: 100px;
+      width: 100%;
+      background-color: #DAEDBD;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+  }
+  
+  .conteudo-footer img {
+      width: 25px;
+      height: 25px;
+  }
+  
+  /* ÍCONES REDES SOCIAIS */ 
+  
+  .redes-sociais {
+      width: 20%;
+      margin-left: 50px;
+      margin-right: 300px;
+      margin-top: auto;
+      margin-bottom: auto;
+      
+  }
+  
+  .redes-sociais img {
+      padding-right: 10px;
+  }
+  
+  /* TEXTO CENTRAL */ 
+  /* precisamos acertar o alinhamento */
+  .texto-footer {
+      align-self: center;
+      width: 30%;
+      align-items: center;
+      font-size: medium;
+      color: #004E64;
+      cursor: pointer;
+  }
+  
+  .texto-footer p {
+      margin: 0%;
+      padding: 5px;
+      text-align: center;
+      justify-content: center;
+  }
+  
+  .texto-footer p:hover {
+      color: #00A5CF;
+  }
+  
+  .textos {
+      justify-content: left;
+      display:flex;
+  }
+  
+  /* ÍCONES + TEXTO CONTATOS */
+  
+  .contato {
+      padding-top: 10px;
+      align-items: center;
+      padding-left: 12%;
+      margin-right:10px;
+      
+  }
+  
+  
+  .contato p {
+      font-size: small;
+      color: #004E64;
+  }
+  
+  .telefone, 
+  .email {
+      display: flex;
+  }
+  
+  /* BARRA INFERIOR */
+  
+  .barra-inferior {  
+      align-items: center;  
+      padding: 0%;
+      border: 0%;
+      margin: none;
+      background-color: #ECF6DE;
+      height: 30px;
+      width: 100%;
+  }
+  
+  .barra-inferior p {
+      margin: 0%;
+      color: #F8861B;
+      text-align: center;
+    padding-top: 5px;
+  }
+  
+  @media only screen and (min-width: 750px)
+  {
+      #logo {padding-left:70px;}
+  
+      .redes-sociais {padding-left: 70px;}
+  
+  }
