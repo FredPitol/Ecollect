@@ -333,10 +333,11 @@ footer p {
 /* ÍCONES REDES SOCIAIS */ 
 
 .redes-sociais {
-    width: 10%;
-    margin-left: 100px;
+    width: 20%;
+    margin-left: 50px;
     margin-right: 300px;
-    padding-top: 36px;
+    margin-top: auto;
+    margin-bottom: auto;
     
 }
 
@@ -367,8 +368,9 @@ footer p {
 }
 
 .textos {
-    justify-content: center;
-    display: flex;
+    justify-content: left;
+    display:flex;
+    ma
 }
 
 /* ÍCONES + TEXTO CONTATOS */
@@ -377,7 +379,7 @@ footer p {
     padding-top: 10px;
     align-items: center;
     padding-left: 12%;
-    margin:1em;
+    margin-right:10px;
     
 }
 

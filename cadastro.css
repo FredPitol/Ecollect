@@ -56,6 +56,8 @@ html, body {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
+	justify-self: center;
+	align-self: center;
 }
 
 input {
@@ -85,7 +87,6 @@ color: white;
 	position: absolute;
 	width: 100%;
 	left: 0;
-  	position: absolute;
   	top: 650px; 
 }
 
@@ -107,8 +108,8 @@ text-transform: uppercase;
 
 
 
-footer,img{
-   text-align: center;
+#logo{
+  
 }
 
 li {
@@ -118,4 +119,9 @@ li {
 	font-size: 15px;
 	line-height: 18px;
 	color: #00A5CF;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
 }
